@@ -1,0 +1,16 @@
+[A, B, C, D]
+
+for each element in array, pick a random element (generate a random index)
+
+remove that element from the original array
+& add to new array
+
+function shuffleQuestions(array, count) {
+const newArr = []
+for (let i = 0; i < count; i++){
+while (array.length > 0){
+    let randomIndex = Math.floor((array.length) * Math.random())
+    const [el] = array.splice(randomIndex, 1)
+    newArr.push(el)
+    }
+}}

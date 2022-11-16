@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --pink: #f72585;
+  --purple: #56078a;
+  --lt-blue: #c1eeff;
+  --dark-blue: #010132;
+  --navy: #3a0ca3;
+
+  /* --purple: #735488; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(
+    169.12deg,
+    #010132 33.42%,
+    #3a0ca3 69.9%,
+    rgba(114, 9, 183, 0.9) 113%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  color: var(--lt-blue);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 3px 0 var(--pink), -3px 0 var(--pink), 0 -3px var(--pink),
+    0px 3px var(--pink);
+  text-align: center;
+}
+
+#score {
+  font-family: "Silkscreen", monospace;
+  font-size: 30px;
+  padding: 10px;
+  border-bottom: 3px solid var(--pink);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 600px) {
+  #score {
+    font-size: 40px;
+  }
 }

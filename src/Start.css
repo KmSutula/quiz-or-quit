@@ -1,0 +1,62 @@
+.selection-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.selection-label {
+  font-family: "Silkscreen", monospace;
+  font-size: 22px;
+  color: var(--lt-blue);
+  margin-bottom: 20px;
+}
+
+select {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "Space Grotesk";
+  text-transform: uppercase;
+  background-color: var(--lt-blue);
+  color: var(--dark-blue);
+  /* border: 5px solid var(--lt-blue); */
+  box-shadow: 3px 0 var(--lt-blue), -3px 0 var(--lt-blue), 0 -3px var(--lt-blue),
+    0px 3px var(--lt-blue);
+  text-align: center;
+}
+
+select:active,
+select:focus {
+  outline: none;
+}
+
+button.submit {
+  display: block;
+  padding: 10px;
+  margin: 25px auto;
+  font-family: "Silkscreen", monospace;
+  font-size: 25px;
+  cursor: pointer;
+  color: var(--lt-blue);
+  background-color: var(--pink);
+  border: none;
+  box-shadow: 3px 0 var(--pink), -3px 0 var(--pink), 0 -3px var(--pink),
+    0px 3px var(--pink);
+}
+button.submit:hover {
+  background-color: var(--purple);
+  box-shadow: 3px 0 var(--purple), -3px 0 var(--purple), 0 -3px var(--purple),
+    0px 3px var(--purple);
+}
+button.submit:active {
+  scale: 0.9;
+}
+
+@media (min-width: 600px) {
+  button.submit {
+    font-size: 30px;
+  }
+}
