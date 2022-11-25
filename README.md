@@ -1,5 +1,7 @@
 <h1>Quiz or Quit?</h1>
 
+<h3>Live at: https://kmsutula.github.io/quiz-or-quit/</h3>
+
 <h2>📋 Summary:</h2> 
 <p>A quiz application that pulls trivia questions/answers from the Open Trivia Database API and provides a score based on performance. 
 Game options like number of questions, difficulty, and category are customizable by the user. The design is based on an 80s video game, drawing on this theme with on neon colors and pixelated text and elements. The site was built mobile-first.</p>
