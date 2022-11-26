@@ -17,7 +17,13 @@ Game options like number of questions, difficulty, and category are customizable
 <li>Framer Motion</li>
 </ul>
 
+<h2>🚧 Obstacles/What I Learned:</h2>
+<p>As I spend more time building in React, I realize that a key part of successful React applications is determining ahead of time which components you will need to create, and what should or shouldn't be combined into one component. In developing this project, I found that I needed to add a Loading component in the case that the API call took extra time, and I also ended up separating my Header component to prevent some unnecessary re-renders.</p>
+<p>This project required lots of functions for many different actions. One that I struggled with was shuffling the correct answer into the incorrect ones. Initially, I did this in the individual Question component, but found when I was changing the selected answer prop due to user input, the answers would reshuffle with every rerender. Once I moved this function into the Question List, I was able to shuffle the answers during the API call, which prevented this bug.</p>
+<p>The functionality of this quiz app relies heavily on state and changing props with user input, and there was a lot of trial and error to make every feature function. </p>
+
 <h2>📸 Screenshots:</h2>
-<img src="https://res.cloudinary.com/de8tjvy2h/image/upload/v1668706578/Github%20Pages/quiz1_pauwgw.png">
-<img src="https://res.cloudinary.com/de8tjvy2h/image/upload/v1668706578/Github%20Pages/quiz2_bsgcfj.png">
-<img src="https://res.cloudinary.com/de8tjvy2h/image/upload/v1668706578/Github%20Pages/quiz3_weg3cy.png">
+<img src="https://user-images.githubusercontent.com/94947661/204109814-0ddf6333-ae42-492a-88d1-d0809866953b.png">
+<img src="https://user-images.githubusercontent.com/94947661/204109815-df9908ce-23a7-43cd-8a93-c5eaccaa099a.png">
+<img src="https://user-images.githubusercontent.com/94947661/204109816-12192835-b249-41cb-8fa5-6499f16417ac.png">
+
